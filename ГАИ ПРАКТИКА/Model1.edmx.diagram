@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fd34dc3be7414085a76e278153f79d1a" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Car" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Driver" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.DriversCars" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Incident" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.IncidentsVolations" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Inspector" Width="1.5" PointX="3.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.State" Width="1.5" PointX="6" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="1.125" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Violation" Width="1.5" PointX="6.125" PointY="7.625" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_DriversCars_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Incident_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_DriversCars_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Incident_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Incident_Inspector" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_IncidentsVolations_Incident" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_IncidentsVolations_State" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_IncidentsVolations_Violation" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
